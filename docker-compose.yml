@@ -1,0 +1,42 @@
+version: "3"
+
+services:
+  serv1:
+    build: .
+    ports:
+      - "5001:5001"
+    volumes:
+      - "./1:/app"
+    command: python3 serv.py
+
+  serv2:
+    build: .
+    ports:
+      - "5002:5002"
+    volumes:
+      - "./2:/app"
+    command: python3 serv.py
+
+  serv3:
+    build: .
+    ports:
+      - "5003:5003"
+    volumes:
+      - "./3:/app"
+    command: python3 serv.py
+
+  serv4:
+    build: .
+    ports:
+      - "5004:5004"
+    volumes:
+      - "./4:/app"
+    command: python3 serv.py
+
+  serv5:
+    build: .
+    ports:
+      - "5005:5005"
+    volumes:
+      - "./5:/app"
+    command: python3 serv.py
