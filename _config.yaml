@@ -1,0 +1,6 @@
+theme: jekyll-theme-cayman
+
+title: Web101
+description: Flaskを用いたWeb入門
+github:
+  is_project_page: false
