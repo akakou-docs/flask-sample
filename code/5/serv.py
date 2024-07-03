@@ -1,12 +1,9 @@
 from flask import Flask, request, render_template
 app = Flask(__name__)
 
-@app.route("/hello", methods=['GET', 'POST'])
+@app.route("/hello", methods=['POST'])
 def index():
-    if request.method == 'POST':
-        name = request.form["name"]
-    else:
-        name = "Taro"
+    name = request.form["name"]
     return render_template('hello.html', name=name)
 
 if __name__ == "__main__":
