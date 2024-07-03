@@ -14,7 +14,6 @@ Python を利用する場合
 
 - python3
 - flask
-- jinja2
 
 (Docker があれば、`docker-compose up`でも起動できます。）
 
