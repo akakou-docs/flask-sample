@@ -13,12 +13,10 @@
 Python を利用する場合
 
 - python3
-- flask jinja2
+- flask
+- jinja2
 
-Docker を利用する場合
-
-- docker
-- docker-compose
+(Dockerがあれば、`docker-compose up`でも起動できます。）
 
 ## 目次
 
