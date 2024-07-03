@@ -9,12 +9,9 @@ template = """
 </form>
 """
 
-@app.route("/hello", methods=['GET', 'POST'])
+@app.route("/hello", methods=['POST'])
 def index():
-    if request.method == 'POST':
-        name = request.form["name"]
-    else:
-        name = "Taro"
+    name = request.form["name"]
     return template.format(name)
 
 if __name__ == "__main__":
